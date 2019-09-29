@@ -1,0 +1,59 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "Validate director name in Wikipedia vs IMDB",
+        "description": "",
+        "id": "director-name;validate-director-name-in-wikipedia-vs-imdb",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 21413276212,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "a list of movie name and urls",
+            "match": {
+              "location": "DirectorNamesSteps.aListOfMovieNameAndUrls()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 351210,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user tries to extract the director names on wikipedia and imdb",
+            "match": {
+              "location": "DirectorNamesSteps.userTriesToCompareTheDirectorNamesOnWikipediaAndImdb()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18503514,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the director names should match",
+            "match": {
+              "location": "DirectorNamesSteps.theDirectorNamesShouldMatch()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Director Name",
+    "description": "",
+    "id": "director-name",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/movie_directors/directornames.feature",
+    "tags": []
+  }
+]
